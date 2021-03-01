@@ -2,7 +2,7 @@
     --white: #FFFFFF;
     --milk: #FBFBFB;
     --dark-blue: #222222;
-    --very-dark-blue :#222224;
+    --very-dark-blue: #222224;
     --very-light-pink: #E1E1E1;
     --light-pink: #F1E4E6;
     --pink: #F16D7F;
@@ -179,7 +179,7 @@ body {
     margin: 97px 0 0 0;
 }
 
-.products__card-box {
+.products__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -236,15 +236,10 @@ body {
     line-height: 19px;
 }
 
-.products__wrapper {
-    display: flex;
-    justify-content: center;
-    margin: 18px 0 0 0;
-}
-
 .products__browse-link {
     width: 211px;
     height: 47px;
+    margin: 18px auto 0 auto;
     text-decoration: none;
     color: var(--dark-pink);
     border: 1px solid #FF6A6A;
