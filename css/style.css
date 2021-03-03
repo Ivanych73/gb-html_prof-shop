@@ -71,6 +71,7 @@ body {
     width: 232px;
     height: 764px;
     box-sizing: border-box;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
 
 .header__navigation-button {
@@ -470,7 +471,7 @@ body {
     align-items: center;
 }
 
-.copyright__links {
+.copyright__socials {
     display: flex;
     justify-content: space-between;
     min-width: 148px;
@@ -489,4 +490,46 @@ body {
 .copyright__link:hover {
     background-color: var(--pink);
     color: var(--white);
+}
+
+.registration {
+    height: 148px;
+    display: flex;
+    align-items: center;
+    background-color: #F8F3F4;
+}
+
+.registration__title {
+    text-transform: uppercase;
+    color: var(--pink);
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: normal;
+}
+
+.registration-form {
+    padding: 64px 0 96px;
+    font-weight: 300;
+}
+
+.registration-form__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.registration-form__input {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+}
+
+.registration-form__perks {
+
+}
+
+.registration-form__perks-title {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
 }
