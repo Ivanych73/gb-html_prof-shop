@@ -18,20 +18,22 @@
         <div class="container">
             <div class="header__wrapper">
                 <div class="header__controls">
-                    <img class="header__logo" src="images/menu-main.svg" alt="logo" width="44" height="38">
+                    <a href="index.html">
+                        <img class="header__logo" src="images/menu-main.svg" alt="logo" width="44" height="38">
+                    </a>
                     <img src="images/menu-search.svg" alt="search" width="26" height="27">
                 </div>
                 <div class="header__controls">
                     <button class="header__button">
                         <img src="images/menu-options.svg" alt="menu" width="32" height="23">
                     </button>
-                    <a class="header__login" href="#"><img src="images/menu-login.svg" alt="login" width="29"
+                    <a class="header__login" href="registration.html"><img src="images/menu-login.svg" alt="login" width="29"
                             height="29"></a>
                     <a href="#"><img src="images/menu-cart.svg" alt="cart" width="41" height="37"></a>
                 </div>
             </div>
         </div>
-        <nav class="header__navigation">
+        <!--        <nav class="header__navigation">
             <div class="header__navigation-wrapper">
                 <div class="header__navigation-overlay">
 
@@ -75,7 +77,8 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav>  -->
+
     </header>
     <main>
         <section class="registration">
@@ -93,11 +96,10 @@
                         <input class="registration-content__input" type="text" placeholder="Last Name">
                     </fieldset>
                     <div class="registration-content__radio">
-                        <input class="registration-content__radio-input" type="radio" id="male" name="sex" value="male">
-                        <label class="registration-content__radio-label" for="male">Male</label>
-                        <input class="registration-content__radio-input" type="radio" id="female" name="sex"
-                            value="female">
-                        <label class="registration-content__radio-label" for="female">Female</label>
+                        <input class="registration-content__radio-input" type="radio" id="contactChoice1" name="sex" value="male">
+                        <label class="registration-content__radio-label" for="contactChoice1">Male</label>
+                        <input class="registration-content__radio-input" type="radio" id="contactChoice2" name="sex" value="female"> 
+                        <label class="registration-content__radio-label" for="contactChoice2">Female</label>                                               
                     </div>
                     <fieldset>
                         <legend>Login details</legend>

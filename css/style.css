@@ -45,7 +45,7 @@ body {
 }
 
 .header__navigation {
-    display: none;    
+    display: block;    
     font-size: 14px;
     line-height: 17px;
     width: 100%;
@@ -134,7 +134,7 @@ body {
 
 .brand__title-wrapper {
     background-color: var(--light-pink);
-    padding: 0 0 0 92px;
+    padding: 0 0 0 64px;
     flex-grow: 1;
     display: flex;
     align-items: center;
@@ -145,6 +145,9 @@ body {
     font-weight: 900;
     line-height: 58px;
     text-transform: uppercase;
+    display: block;
+    border-left: 12px solid var(--pink);
+    padding: 0 0 0 16px;
 }
 
 .brand__subtitle {
@@ -533,6 +536,10 @@ body {
     margin: 21px 0 0 0;
 }
 
+.registration-content__input:hover {
+    background-color: var(--light-pink);
+}
+
 .registration-content__radio {
     display: flex;
     margin: 32px 0 33px;
@@ -554,6 +561,13 @@ body {
 .registration-content__radio-label::before {
     content: url(../images/circle.svg);
     margin: 0 10px 0 0;
+}
+
+.registration-content__radio-input:checked+ .registration-content__radio-label::before{
+    background-image: url(../images/BlackDot.svg);
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center, center;
 }
 
 .registration-content__password-security {
