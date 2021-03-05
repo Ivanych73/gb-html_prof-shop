@@ -45,13 +45,17 @@ body {
 }
 
 .header__navigation {
-    display: block;    
+    display: none;    
     font-size: 14px;
     line-height: 17px;
     width: 100%;
     position: absolute;
     top: 75px;
     left: 0px;
+}
+
+.display-block {
+    display: block;
 }
 
 .header__navigation-wrapper {
@@ -75,11 +79,21 @@ body {
 }
 
 .header__navigation-button {
-    width: 12px;
-    height: 12px;
     border: none;
+    height: 12px;
     background-color: var(--white);
     align-self: flex-end;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header__navigation-button:hover {
+    border: 1px solid var(--black);
+}
+
+.header__navigation-button:active {
+    outline: none;
+    background-color: var(--dark-grey);
 }
 
 .header__navigation-title {
@@ -121,6 +135,10 @@ body {
     background-color: transparent;
     border: none;
     margin: 0 34px 0 0;
+}
+
+.svg:hover {
+    filter: invert(25%);
 }
 
 .header__login {
