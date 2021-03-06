@@ -11,9 +11,7 @@
     }
 
     &__title {
-        font-size: 48px;
-        font-weight: 900;
-        line-height: 58px;
+        @include font-settings (900, 48px, 58px);
         text-transform: uppercase;
         display: block;
         border-left: 12px solid $pink;
@@ -22,9 +20,7 @@
 
     &__subtitle {
         display: block;
-        font-size: 37px;
-        font-weight: 700;
-        line-height: 44px;
+        @include font-settings (700, 37px, 44px);
     }
 
     &__subtitle-pink {

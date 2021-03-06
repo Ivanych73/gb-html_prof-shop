@@ -6,19 +6,15 @@
     align-items: center;
 
     &__list {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex-center-sb;
     }
 
     &__item {
         width: 360px;
         min-height: 134px;
         color: $milk;
-        display: flex;
+        @include flex-center-sb;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
     }
 
     &__info {
@@ -26,16 +22,12 @@
     }
 
     &__item-title {
-        font-size: 20px;
-        line-height: 24px;
-        font-weight: 400;
+        @include font-settings(400, 20px, 24px);
         display: block;
         margin: 0 0 16px 0;
     }
 
     &__item-text {
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 17px;
+        @include font-settings(300, 14px, 17px);
     }
 }

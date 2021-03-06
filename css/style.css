@@ -109,8 +109,8 @@ body {
 
 .header__wrapper {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   min-height: 75px;
 }
 
@@ -218,9 +218,10 @@ body {
 }
 
 .brand__title {
-  font-size: 48px;
   font-weight: 900;
+  font-size: 48px;
   line-height: 58px;
+  font-style: normal;
   text-transform: uppercase;
   display: block;
   border-left: 12px solid #F16D7F;
@@ -229,9 +230,10 @@ body {
 
 .brand__subtitle {
   display: block;
-  font-size: 37px;
   font-weight: 700;
+  font-size: 37px;
   line-height: 44px;
+  font-style: normal;
 }
 
 .brand__subtitle-pink {
@@ -251,9 +253,9 @@ body {
   margin: 0 0 30px;
   color: #FFFFFF;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   text-transform: uppercase;
 }
 
@@ -278,9 +280,10 @@ body {
 
 .offers__text {
   color: #F16D7F;
-  font-size: 24px;
   font-weight: 700;
+  font-size: 24px;
   line-height: 29px;
+  font-style: normal;
 }
 
 .products {
@@ -296,9 +299,10 @@ body {
 
 .products__title {
   color: #222222;
-  font-size: 30px;
   font-weight: 400;
+  font-size: 30px;
   line-height: 36px;
+  font-style: normal;
   text-align: center;
   display: block;
   margin: 0 0 6px;
@@ -317,8 +321,8 @@ body {
   margin: 18px auto 0 auto;
   text-decoration: none;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .product-card {
@@ -342,13 +346,13 @@ body {
   background: rgba(58, 56, 56, 0.86);
   width: 100%;
   height: 100%;
-  justify-content: center;
-  align-items: center;
   display: none;
 }
 
 .product-card__add-to-cart:hover {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .product-card__button {
@@ -388,6 +392,7 @@ body {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
+  font-style: normal;
   display: block;
   margin: 13px 0 18px;
 }
@@ -408,8 +413,8 @@ body {
 
 .advantages__list {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .advantages__item {
@@ -417,9 +422,9 @@ body {
   min-height: 134px;
   color: #FBFBFB;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .advantages__info {
@@ -427,9 +432,10 @@ body {
 }
 
 .advantages__item-title {
+  font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  font-weight: 400;
+  font-style: normal;
   display: block;
   margin: 0 0 16px 0;
 }
@@ -438,6 +444,7 @@ body {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
+  font-style: normal;
 }
 
 .subscription {
@@ -476,9 +483,10 @@ body {
 
 .subscription__form-title {
   text-transform: uppercase;
-  font-size: 24px;
   font-weight: 700;
+  font-size: 24px;
   line-height: 38px;
+  font-style: normal;
 }
 
 .subscription__form-text {
@@ -530,8 +538,8 @@ body {
 
 .copyright__content {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .copyright__socials {
@@ -546,8 +554,8 @@ body {
   color: #000000;
   background-color: #FFFFFF;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .copyright__link:hover {
@@ -626,9 +634,10 @@ body {
 .registration__button {
   width: 167px;
   height: 50px;
+  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  font-weight: 400;
+  font-style: normal;
   text-transform: uppercase;
   border: 1px solid #FF6A6A;
   background-color: #FFFFFF;
@@ -659,6 +668,7 @@ body {
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
+  font-style: normal;
 }
 
 .registration__info-text {

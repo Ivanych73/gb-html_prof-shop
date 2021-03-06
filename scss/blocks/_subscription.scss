@@ -33,9 +33,7 @@
 
     &__form-title {
         text-transform: uppercase;
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 38px;
+        @include font-settings (700, 24px, 38px);
     }
 
     &__form-text {

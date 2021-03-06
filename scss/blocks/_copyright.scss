@@ -8,9 +8,7 @@
     align-items: center;
 
     &__content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex-center-sb;
     }
 
     &__socials {
@@ -24,9 +22,7 @@
         height: 31px;
         color: $black;
         background-color: $white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center-center;
     }
 
     &__link:hover {
