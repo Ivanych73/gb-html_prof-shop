@@ -1,0 +1,36 @@
+.copyright {
+    min-height: 79px;
+    background-color: $very-dark-blue;
+    color: $milk;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: space-between;
+        min-width: 148px;
+    }
+
+    &__link {
+        width: 32px;
+        height: 31px;
+        color: $black;
+        background-color: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__link:hover {
+        background-color: $pink;
+        color: $white;
+    }
+}
