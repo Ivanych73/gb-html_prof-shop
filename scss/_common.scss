@@ -25,13 +25,30 @@ body {
 .white-pink-button {
     color: $dark-pink;
     background-color: $white;
-    border: 1px solid $bittersweet;;
+    border: 1px solid $bittersweet;
+    font-family: Lato;
 }
 
 .white-pink-button:hover {
     background-color: $pink;
     border: 1px solid $bittersweet;
     color: $white;
+}
+
+.close-button {
+    border: none;
+    background-color: $white;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.close-button:hover {
+    border: 1px solid $black;
+}
+
+.close-button:active {
+    outline: none;
+    background-color: $dark-grey;
 }
 
 .svg:hover {

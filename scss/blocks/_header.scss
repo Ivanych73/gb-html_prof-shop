@@ -50,23 +50,10 @@
         box-sizing: border-box;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     }
-    
+
     &__navigation-button {
-        border: none;
         height: 12px;
-        background-color: $white;
         align-self: flex-end;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    &__navigation-button:hover {
-        border: 1px solid $black;
-    }
-
-    &__navigation-button:active {
-        outline: none;
-        background-color: $dark-grey;
     }
 
     &__navigation-title {

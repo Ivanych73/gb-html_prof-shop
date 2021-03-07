@@ -1,0 +1,116 @@
+.cart-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 96px 0 129px;
+}
+
+.cart-content {
+    width: 652px;
+}
+
+.cart-content__product {
+    display: flex;
+    margin: 0 0 40px;
+    box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+}
+
+.cart-content_product-img {
+    display: flex;
+}
+
+.cart-content_product-content {
+    padding: 22px 22px 0 31px;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.cart-content_product-close {
+    height: 18px;
+    margin: 6px 0 0 0;
+}
+
+.cart-content_product-title {
+    color: $dark-blue;
+    @include font-settings (400, 24px, 29px);
+    text-transform: uppercase;
+    margin: 0 0 42px;
+    display: block;
+    width: 262px;
+}
+
+.cart-content_product-text {
+    @include font-settings (400, 22px, 26px);
+    color: $scorpion;
+    margin: 0 0 6px;
+}
+
+.cart-content_product-text_quantity {
+    display: flex;
+}
+
+.cart-content_product-value {
+    color: $dove-grey;
+}
+
+.cart-content_product-price {
+    color: $pink;
+}
+
+.cart-content_product-quantity {
+    @include flex-center-center;
+    width: 43px;
+    height: 24px;
+    color: $dove-grey;
+    margin: 0 0 0 24px;
+    border: 1px solid $gallery;
+}
+
+.cart-content_button-wrapper {
+    margin: 73px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-content_button {
+    border: 1px solid $silver-chalice;
+    width: 235px;
+    height: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    @include flex-center-center;
+    color: $black;
+    background-color: $white;
+    @include font-settings (300, 14px, 17px);
+    box-sizing: border-box;
+    font-family: Lato;
+}
+
+.cart-content_button:hover {
+    background-color: $silver-chalice;
+    color: $white;
+}
+
+.cart-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-form__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-form__checkout {
+    display: flex;
+    flex-direction: column;
+    padding: 39px 34px 42px;
+    background-color: $wild-sand;
+}
+
+.cart-form__checkout-button {
+    box-sizing: border-box;
+    width: 273px;
+    height: 50px;
+    text-transform: uppercase;
+}
