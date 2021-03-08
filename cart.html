@@ -90,71 +90,72 @@
             <div class="container">
                 <div class="cart-wrapper">
                     <h2 class="visually-hidden">cart</h2>
-                    <div class="cart-content">
-                        <div class="cart-content__product">
-                            <div class="cart-content_product-img">
+                    <ul class="cart-list">
+                        <li class="cart-list__product">
+                            <div class="cart-list__product-img">
                                 <img src="images/man_in_shorts.png" alt="man in shorts" width="262" height="306">
                             </div>
-                            <div class="cart-content_product-content">
-                                <div class="cart-content_product-content-wrapper">
-                                    <h3 class="cart-content_product-title">mango people t&#8209;shirt</h3>
-                                    <p class="cart-content_product-text">Price: <span
-                                            class="cart-content_product-price">$300</span>
+                            <div class="cart-list__product-content">
+                                <div class="cart-list__product-content-wrapper">
+                                    <h3 class="cart-list__product-title">mango people t&#8209;shirt</h3>
+                                    <p class="cart-list__product-text">Price: <span class="cart_pink-text">$300</span>
                                     </p>
-                                    <p class="cart-content_product-text">Color: <span
-                                            class="cart-content_product-value">Red</span>
+                                    <p class="cart-list__product-text">Color: <span
+                                            class="cart-list__product-value">Red</span>
                                     </p>
-                                    <p class="cart-content_product-text">Size: <span
-                                            class="cart-content_product-value">Xl</span>
+                                    <p class="cart-list__product-text">Size: <span
+                                            class="cart-list__product-value">Xl</span>
                                     </p>
-                                    <p class="cart-content_product-text cart-content_product-text_quantity">Quantity:
-                                        <span class="cart-content_product-quantity">2</span>
+                                    <p class="cart-list__product-text cart-list__product-text_quantity">Quantity:
+                                        <span class="cart-list__product-quantity">2</span>
                                     </p>
                                 </div>
-                                <button type="button" class="cart-content_product-close close-button"><img
+                                <button type="button" class="cart-list__product-close close-button"><img
                                         src="images/close.svg" alt="close" width="18" height="18"></button>
                             </div>
-                        </div>
-                        <div class="cart-content__product">
-                            <div class="cart-content_product-img">
+                        </li>
+                        <li class="cart-list__product">
+                            <div class="cart-list__product-img">
                                 <img src="images/product1.png" alt="product1" width="262" height="306">
                             </div>
-                            <div class="cart-content_product-content">
-                                <div class="cart-content_product-content-wrapper">
-                                    <h3 class="cart-content_product-title">mango people t&#8209;shirt</h3>
-                                    <p class="cart-content_product-text">Price: <span
-                                            class="cart-content_product-price">$300</span>
+                            <div class="cart-list__product-content">
+                                <div class="cart-list__product-content-wrapper">
+                                    <h3 class="cart-list__product-title">mango people t&#8209;shirt</h3>
+                                    <p class="cart-list__product-text">Price: <span class="cart_pink-text">$300</span>
                                     </p>
-                                    <p class="cart-content_product-text">Color: <span
-                                            class="cart-content_product-value">Red</span>
+                                    <p class="cart-list__product-text">Color: <span
+                                            class="cart-list__product-value">Red</span>
                                     </p>
-                                    <p class="cart-content_product-text">Size: <span
-                                            class="cart-content_product-value">Xl</span>
+                                    <p class="cart-list__product-text">Size: <span
+                                            class="cart-list__product-value">Xl</span>
                                     </p>
-                                    <p class="cart-content_product-text cart-content_product-text_quantity">Quantity:
-                                        <span class="cart-content_product-quantity">2</span>
+                                    <p class="cart-list__product-text cart-list__product-text_quantity">Quantity:
+                                        <span class="cart-list__product-quantity">2</span>
                                     </p>
                                 </div>
-                                <button type="button" class="cart-content_product-close close-button"><img
+                                <button type="button" class="cart-list__product-close close-button"><img
                                         src="images/close.svg" alt="close" width="18" height="18"></button>
                             </div>
+                        </li>
+                        <div class="cart-list__button-wrapper">
+                            <button type="button" class="cart-list__button">clear shopping cart</button>
+                            <a href="#" class="cart-list__button">continue shopping</a>
                         </div>
-                        <div class="cart-content_button-wrapper">
-                            <button type="button" class="cart-content_button">clear shopping cart</button>
-                            <a href="#" class="cart-content_button">continue shopping</a>
-                        </div>
-                    </div>
+                    </ul>
                     <div class="cart-form">
                         <form action="#" class="cart-form__form">
-                            <h2>shipping adress</h2>
+                            <h2 class="cart-form__form-title">shipping adress</h2>
                             <input type="text" class="cart-form__form-input" placeholder="Country">
                             <input type="text" class="cart-form__form-input" placeholder="State">
                             <input type="text" class="cart-form__form-input" placeholder="Postcode / Zip">
-                            <button type="submit">get a quote</button>
+                            <button type="submit" class="cart-form__form-button">get a quote</button>
                         </form>
                         <div class="cart-form__checkout">
-                            sub total $900
-                            grand total $900
+                            <p class="cart-form__sub-total">sub total<span
+                                    class="cart-form__checkout-amount">$900</span></p>
+                            <p class="cart-form__grand-total">grand total<span
+                                    class="cart_pink-text grand-total__pink cart-form__checkout-amount">$900</span></p>
+                            <hr class="cart-form__checkout-hr">
                             <button type="button" class="white-pink-button cart-form__checkout-button">proceed to
                                 checkout</button>
                         </div>
