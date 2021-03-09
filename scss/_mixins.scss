@@ -1,0 +1,18 @@
+@mixin flex-center-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-center-sb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin font-settings ($weight, $size, $height, $style: normal) {
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+    font-style: $style;
+}
