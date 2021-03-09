@@ -2,12 +2,20 @@
     display: flex;
     margin: 0 0 64px;
 
+    @include tablet {
+        margin: 0 0 20px;
+    }
+
     &__title-wrapper {
         background-color: $light-pink;
         padding: 0 0 0 64px;
         flex-grow: 1;
         display: flex;
         align-items: center;
+
+        @include tablet {
+            padding: 0 0 0 40px;
+        }
     }
 
     &__title {
@@ -16,11 +24,19 @@
         display: block;
         border-left: 12px solid $pink;
         padding: 0 0 0 16px;
+
+        @include tablet {
+            @include font-settings (900, 44px, 53px);
+        }
     }
 
     &__subtitle {
         display: block;
         @include font-settings (700, 37px, 44px);
+
+        @include tablet {
+            @include font-settings (700, 24px, 29px);
+        }
     }
 
     &__subtitle-pink {

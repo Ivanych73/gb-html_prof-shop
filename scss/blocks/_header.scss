@@ -5,6 +5,9 @@
     &__wrapper {
         @include flex-center-sb;
         min-height: 75px;
+        @include tablet {
+            padding: 0 16px 0 16px;
+        }
     }
 
     &__logo {

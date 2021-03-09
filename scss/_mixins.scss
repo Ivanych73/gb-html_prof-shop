@@ -16,3 +16,9 @@
     line-height: $height;
     font-style: $style;
 }
+
+@mixin tablet {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
