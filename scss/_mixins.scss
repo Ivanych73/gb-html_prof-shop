@@ -23,8 +23,26 @@
     }
 }
 
+@mixin tablet1024 {
+    @media (max-width: $tablet1024) {
+        @content;
+    }
+}
+
+@mixin tablet750 {
+    @media (max-width: $tablet750) {
+        @content;
+    }
+}
+
 @mixin mobile {
     @media (max-width: $mobile) {
+        @content;
+    }
+}
+
+@mixin mobile425 {
+    @media (max-width: $mobile425) {
         @content;
     }
 }

@@ -10,6 +10,11 @@
         padding: 48px 0 16px 0;
     }
 
+    @include mobile {
+        margin: 97px 0 0 0;
+        padding: 48px 0 33px 0;
+    }
+
     &__list {
         @include flex-center-sb;
 

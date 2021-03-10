@@ -5,14 +5,31 @@
         margin: 155px 0 0 0;
     }
 
+    @include mobile {
+        margin: 64px 0 0 0;
+    }
+
     &__list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         margin: 48px 0 0 0;
+   
+        @include tablet1024 {
+            justify-content: center;
+        }
 
         @include tablet {
             margin: 74px 0 0 0;
+            justify-content: space-between;
+        }
+
+        @include tablet750 {
+            justify-content: center;
+        }
+
+        @include mobile {
+            margin: 65px 0 0 0;
         }
     }
 
@@ -37,6 +54,10 @@
         margin: 18px auto 0 auto;
         text-decoration: none;
         @include flex-center-center;
+
+        @include mobile {
+            margin: 25px auto 0 auto;
+        }
     }
 }
 

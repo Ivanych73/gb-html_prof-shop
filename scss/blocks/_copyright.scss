@@ -7,14 +7,30 @@
     display: flex;
     align-items: center;
 
+    @include mobile {
+        height: 143px;
+    }
+
     &__content {
         @include flex-center-sb;
+
+        @include tablet {
+            padding: 0 17px;
+        }
+
+        @include mobile {
+            flex-direction: column-reverse;
+        }
     }
 
     &__socials {
         display: flex;
         justify-content: space-between;
         min-width: 148px;
+
+        @include mobile {
+            margin: 43px 0 40px;
+        }
     }
 
     &__link {
