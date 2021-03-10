@@ -1,11 +1,19 @@
 .products {
     margin: 97px 0 0 0;
 
+    @include tablet {
+        margin: 155px 0 0 0;
+    }
+
     &__list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         margin: 48px 0 0 0;
+
+        @include tablet {
+            margin: 74px 0 0 0;
+        }
     }
 
     &__title {
@@ -37,6 +45,10 @@
     height: 580px;
     background-color: $light-grey;
     margin: 0 0 30px;
+
+    @include tablet {
+        margin: 0 0 16px;
+    }
 
     &__wrapper {
         position: relative;

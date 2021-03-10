@@ -352,6 +352,13 @@ body {
   background-size: cover;
 }
 
+@media (max-width: 768px) {
+  .offers__item {
+    height: 168px;
+    margin: 0 0 19px;
+  }
+}
+
 .offers__item_women {
   background-image: url(../images/offer-women.png);
 }
@@ -371,6 +378,12 @@ body {
   margin: 0;
 }
 
+@media (max-width: 768px) {
+  .offers__item_accesories {
+    height: 116px;
+  }
+}
+
 .offers__text {
   color: #F16D7F;
   font-weight: 700;
@@ -383,6 +396,12 @@ body {
   margin: 97px 0 0 0;
 }
 
+@media (max-width: 768px) {
+  .products {
+    margin: 155px 0 0 0;
+  }
+}
+
 .products__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -393,6 +412,12 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 48px 0 0 0;
+}
+
+@media (max-width: 768px) {
+  .products__list {
+    margin: 74px 0 0 0;
+  }
 }
 
 .products__title {
@@ -434,6 +459,12 @@ body {
   height: 580px;
   background-color: #F8F8F8;
   margin: 0 0 30px;
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    margin: 0 0 16px;
+  }
 }
 
 .product-card__wrapper {
@@ -529,6 +560,13 @@ body {
           align-items: center;
 }
 
+@media (max-width: 768px) {
+  .advantages {
+    margin: 65px 0 0 0;
+    padding: 48px 0 16px 0;
+  }
+}
+
 .advantages__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -539,6 +577,15 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .advantages__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .advantages__item {
@@ -558,6 +605,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .advantages__item {
+    margin: 0 0 48px;
+  }
 }
 
 .advantages__info {
@@ -583,6 +636,7 @@ body {
 .subscription {
   min-height: 448px;
   background-image: url(../images/subscribe-background.png);
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -600,6 +654,19 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+@media (max-width: 768px) {
+  .subscription__content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+  }
 }
 
 .subscription__info {

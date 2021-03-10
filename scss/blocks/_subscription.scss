@@ -1,6 +1,7 @@
 .subscription {
     min-height: 448px;
     background-image: url(../images/subscribe-background.png);
+    background-size: cover;
     display: flex;
 
     &__content {
@@ -9,6 +10,12 @@
         justify-content: space-between;
         margin: 0 auto 156px auto;
         align-items: flex-end;
+
+        @include tablet {
+            align-items: center;
+            flex-direction: column;
+            margin: 0 auto;
+        }
     }
 
     &__info {
