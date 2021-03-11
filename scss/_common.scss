@@ -10,6 +10,10 @@ body {
     margin: 0 auto;
     width: 71%;
 
+    @include desktop1280 {
+        width: 86%;
+    }
+
     @include tablet1024 {
         width: 94%;
     }

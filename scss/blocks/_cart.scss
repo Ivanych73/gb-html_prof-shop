@@ -2,10 +2,20 @@
     display: flex;
     justify-content: space-between;
     margin: 96px 0 129px;
+
+    @include tablet960 {
+        flex-direction: column;
+        align-items: center;
+        margin: 59px 0 129px;
+    }
 }
 
 .cart-list {
-    width: 652px;
+    width: 57%;
+
+    @include tablet960 {
+        width: 100%;
+    }
 
     &__product {
         display: flex;
@@ -35,7 +45,7 @@
         text-transform: uppercase;
         margin: 0 0 42px;
         display: block;
-        width: 262px;
+        width: 67%;
     }
 
     &__product-text {
@@ -65,6 +75,12 @@
         margin: 73px 0 0 0;
         display: flex;
         justify-content: space-between;
+
+        @include tablet960 {
+            width: 69%;
+            margin: 63px auto 65px;
+            align-self: center;
+        }
     }
 
     &__button {
@@ -112,6 +128,7 @@
         width: 359px;
         height: 44px;
         border: 1px solid $silver-chalice;
+        padding: 13px 0 16px 17px;
         margin: 0 0 21px 0;
         @include font-settings (300, 13px, 16px);
         color: $input-grey;
