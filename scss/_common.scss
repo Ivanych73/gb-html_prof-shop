@@ -10,6 +10,10 @@ body {
     margin: 0 auto;
     width: 71%;
 
+    @include tablet1024 {
+        width: 94%;
+    }
+
     @include tablet {
         width: 96%;
     }

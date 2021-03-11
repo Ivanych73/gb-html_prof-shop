@@ -14,14 +14,9 @@
         flex-wrap: wrap;
         justify-content: space-between;
         margin: 48px 0 0 0;
-   
-        @include tablet1024 {
-            justify-content: center;
-        }
 
         @include tablet {
             margin: 74px 0 0 0;
-            justify-content: space-between;
         }
 
         @include tablet750 {
