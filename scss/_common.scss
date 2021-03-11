@@ -68,12 +68,16 @@ body {
     display: flex;
     align-items: center;
     background-color: $soft-peach;
-    
+
     &__title {
         text-transform: uppercase;
         color: $pink;
         font-size: 24px;
         line-height: 29px;
         font-weight: normal;
+
+        @include tablet600 {
+            text-align: center;
+        }
     }
 }

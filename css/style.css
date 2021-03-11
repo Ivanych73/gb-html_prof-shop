@@ -137,6 +137,12 @@ body {
   font-weight: normal;
 }
 
+@media (max-width: 600px) {
+  .heading__title {
+    text-align: center;
+  }
+}
+
 .header {
   background-color: #222222;
   position: relative;
@@ -1004,6 +1010,18 @@ body {
   font-weight: 300;
 }
 
+@media (max-width: 768px) {
+  .registration {
+    padding: 40px 0 96px;
+  }
+}
+
+@media (max-width: 375px) {
+  .registration {
+    padding: 40px 0 100px;
+  }
+}
+
 .registration__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1011,6 +1029,18 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  .registration__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .registration__form {
@@ -1022,8 +1052,20 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 360px;
-  margin: 0 129px 0 0;
+  margin: 0 11% 0 0;
   color: #222222;
+}
+
+@media (max-width: 768px) {
+  .registration__form {
+    margin: 0 3% 0 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .registration__form {
+    margin: 0 0 40px;
+  }
 }
 
 .registration__input {
@@ -1033,6 +1075,7 @@ body {
           box-sizing: border-box;
   border: 1px solid #A4A4A4;
   margin: 21px 0 0 0;
+  padding: 13px 0 16px 17px;
 }
 
 .registration__input:hover {
@@ -1122,6 +1165,15 @@ body {
   line-height: 29px;
 }
 
+@media (max-width: 768px) {
+  .registration__info {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    font-style: normal;
+  }
+}
+
 .registration__info-title {
   text-transform: uppercase;
   font-weight: 300;
@@ -1130,9 +1182,24 @@ body {
   font-style: normal;
 }
 
+@media (max-width: 768px) {
+  .registration__info-title {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    font-style: normal;
+  }
+}
+
 .registration__info-text {
   display: block;
   margin: 22px 0 21px 0;
+}
+
+@media (max-width: 768px) {
+  .registration__info-text {
+    margin: 32px 0 22px 0;
+  }
 }
 
 .registration__info-item {
