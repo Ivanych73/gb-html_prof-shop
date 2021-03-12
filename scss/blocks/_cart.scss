@@ -112,6 +112,13 @@
     flex-direction: column;
     padding: 17px 0 0 0;
 
+    @include tablet960 {
+        width: 100%;
+        padding: 0;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
     &__form {
         display: flex;
         flex-direction: column;
@@ -158,6 +165,12 @@
         padding: 39px 34px 42px;
         background-color: $wild-sand;
         margin: 58px 0 0 0;
+
+        @include tablet960 {
+            width: 360px;
+            box-sizing: border-box;
+            margin: 40px 0 0 0;
+        }
     }
 
     &__sub-total {
