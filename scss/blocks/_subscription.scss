@@ -1,7 +1,19 @@
 .subscription {
     min-height: 448px;
     background-image: url(../images/subscribe-background.png);
+    background-size: cover;
     display: flex;
+
+    @include tablet {
+        height: 614px;
+        padding: 64px 0 140px;
+        box-sizing: border-box;
+    }
+
+    @include mobile {
+        height: 550px;
+        padding: 64px 0 110px;
+    }
 
     &__content {
         color: $very-dark-blue;
@@ -9,6 +21,12 @@
         justify-content: space-between;
         margin: 0 auto 156px auto;
         align-items: flex-end;
+
+        @include tablet {
+            align-items: center;
+            flex-direction: column;
+            margin: 0 auto;
+        }
     }
 
     &__info {
@@ -16,6 +34,11 @@
         text-align: center;
         font-size: 20px;
         line-height: 24px;
+
+        @include mobile {
+            width: 343px;
+            @include font-settings (400, 18px, 22px);
+        }
     }
 
     &__info-text {
@@ -42,6 +65,11 @@
         text-transform: uppercase;
         display: block;
         margin: 0 0 32px;
+
+        @include mobile {
+            @include font-settings (400, 14px, 21px);
+            margin: 0 0 22px;
+        }
     }
 
     &__wrapper {
@@ -58,6 +86,11 @@
         line-height: 17px;
         padding: 0 0 0 22px;
         box-sizing: border-box;
+
+        @include mobile {
+            height: 47px;
+            width: 242px;
+        }
     }
 
     &__input:hover {
@@ -71,5 +104,10 @@
         font-size: 14px;
         line-height: 17px;
         box-sizing: border-box;
+
+        @include mobile {
+            width: 96px;
+            height: 47px;
+        }
     }
 }

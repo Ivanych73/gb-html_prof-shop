@@ -5,8 +5,13 @@
     &__wrapper {
         @include flex-center-sb;
         min-height: 75px;
+
         @include tablet {
             padding: 0 16px 0 16px;
+        }
+
+        @include mobile {
+            padding: 0 9px 0 9px;
         }
     }
 
@@ -18,10 +23,24 @@
         background-color: transparent;
         border: none;
         margin: 0 34px 0 0;
+
+        @include mobile {
+            margin: 0;
+        }
     }
 
     &__login {
         margin: 0 33px 0 0;
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    .header__cart-link {
+        @include mobile {
+            display: none;
+        }
     }
 
     &__navigation {
