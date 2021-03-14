@@ -2,6 +2,8 @@
 @import './variables';
 @import './mixins';
 @import './common';
+@import './fontawesome/fontawesome.scss';
+@import './fontawesome/solid.scss';
 @import './blocks/header';
 @import './blocks/brand';
 @import './blocks/offers';
@@ -11,3 +13,4 @@
 @import './blocks/copyright';
 @import './blocks/registration';
 @import './blocks/cart';
+@import './blocks/product';

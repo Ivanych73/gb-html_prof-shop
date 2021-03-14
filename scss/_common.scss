@@ -6,9 +6,13 @@ body {
     line-height: 19px;
 }
 
-.container {
+.non-bootstrap-container {
     margin: 0 auto;
     width: 71%;
+
+    @include desktop1440 {
+        width: 80%;
+    }
 
     @include desktop1280 {
         width: 86%;
