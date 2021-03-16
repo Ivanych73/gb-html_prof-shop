@@ -8,6 +8,10 @@
         align-items: center;
         margin: 59px 0 129px;
     }
+
+    @include mobile {
+        margin: 39px 0 96px;
+    }
 }
 
 .cart-list {
@@ -21,10 +25,23 @@
         display: flex;
         margin: 0 0 40px;
         box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+
+        @include tablet600 {
+            filter: drop-shadow(8px 8px 21px rgba(0, 0, 0, 0.13));
+        }
+
+        @include mobile {
+            margin: 0 0 32px;
+        }
     }
 
     &__product-img {
-        display: flex;
+        display: block;
+
+        @include tablet600 {
+            width: 144px;
+            height: 188px;
+        }
     }
 
     &__product-content {
@@ -32,11 +49,26 @@
         display: flex;
         justify-content: space-between;
         flex-grow: 1;
+
+        @include tablet600 {
+            padding: 14px 12px 0 17px;
+        }
     }
 
     &__product-close {
         height: 18px;
         margin: 6px 0 0 0;
+
+        @include tablet600 {
+            margin: 0;
+        }
+    }
+
+    &__product-close-img {
+        @include tablet600 {
+            width: 11px;
+            height: 10px;
+        }
     }
 
     &__product-title {
@@ -46,12 +78,22 @@
         margin: 0 0 42px;
         display: block;
         width: 67%;
+
+        @include tablet600 {
+            margin: 0 0 26px;
+            @include font-settings (400, 16px, 19px);
+        }
     }
 
     &__product-text {
         @include font-settings (400, 22px, 26px);
         color: $scorpion;
         margin: 0 0 6px;
+
+        @include tablet600 {
+            @include font-settings (400, 14px, 17px);
+            margin: 0 0 4px;
+        }
 
         &_quantity {
             display: flex;
@@ -69,6 +111,12 @@
         color: $dove-grey;
         margin: 0 0 0 24px;
         border: 1px solid $gallery;
+
+        @include tablet600 {
+            width: 24px;
+            height: 15px;
+            margin: 0 0 0 15px;
+        }
     }
     
     &__button-wrapper {
@@ -80,6 +128,14 @@
             width: 69%;
             margin: 63px auto 65px;
             align-self: center;
+        }
+
+        @include tablet750 {
+            width: 100%;
+        }
+
+        @include mobile {
+            margin: 0 0 48px;
         }
     }
 
@@ -95,6 +151,12 @@
         @include font-settings (300, 14px, 17px);
         box-sizing: border-box;
         font-family: Lato;
+
+        @include tablet750 {
+            width: 174px;
+            height: 32px;
+            @include font-settings (400, 12px, 14px);
+        }
     }
 
     &__button:hover {
@@ -117,6 +179,11 @@
         padding: 0;
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    @include tablet750 {
+        flex-direction: column;
+        align-items: center;
     }
 
     &__form {

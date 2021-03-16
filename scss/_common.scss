@@ -6,9 +6,13 @@ body {
     line-height: 19px;
 }
 
-.container {
+.non-bootstrap-container {
     margin: 0 auto;
     width: 71%;
+
+    @include desktop1440 {
+        width: 80%;
+    }
 
     @include desktop1280 {
         width: 86%;
@@ -73,6 +77,30 @@ body {
     align-items: center;
     background-color: $soft-peach;
 
+    &__title-wrapper{
+        display: flex;
+        justify-content: space-between;
+
+        @include tablet600 {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    &__breadcrumbs {
+        text-transform: uppercase;
+        @include font-settings (300, 14px, 17px);
+
+        @include tablet600 {
+            margin: 32px 0;
+        }
+    }
+
+    &__breadcrumbs-pink {
+        color: $pink;
+        font-weight: 700;
+    }
+
     &__title {
         text-transform: uppercase;
         color: $pink;
@@ -84,4 +112,5 @@ body {
             text-align: center;
         }
     }
+
 }

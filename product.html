@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
         rel="stylesheet"> -->
-    <title>Cart</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    <title>Product</title>
 </head>
 
 <body>
@@ -83,84 +86,164 @@
     <main>
         <section class="heading">
             <div class="non-bootstrap-container">
-                <h1 class="heading__title">shopping cart</h1>
+                <div class="heading__title-wrapper">
+                    <h1 class="heading__title">new arrivals</h1>
+                    <h2 class="heading__breadcrumbs">home / men / <span class="heading__breadcrumbs-pink" > new arrivals</span></h2>
+                </div>
             </div>
         </section>
-        <section class="cart">
-            <div class="non-bootstrap-container">
-                <div class="cart-wrapper">
-                    <h2 class="visually-hidden">cart</h2>
-                    <ul class="cart-list">
-                        <li class="cart-list__product">
-                            <img class="cart-list__product-img" src="images/man_in_shorts.png" alt="man in shorts"
-                                width="262" height="306">
-                            <div class="cart-list__product-content">
-                                <div class="cart-list__product-content-wrapper">
-                                    <h3 class="cart-list__product-title">mango&nbsp;people t&#8209;shirt</h3>
-                                    <p class="cart-list__product-text">Price: <span class="cart_pink-text">$300</span>
-                                    </p>
-                                    <p class="cart-list__product-text">Color: <span
-                                            class="cart-list__product-value">Red</span>
-                                    </p>
-                                    <p class="cart-list__product-text">Size: <span
-                                            class="cart-list__product-value">Xl</span>
-                                    </p>
-                                    <p class="cart-list__product-text cart-list__product-text_quantity">Quantity:
-                                        <span class="cart-list__product-quantity">2</span>
-                                    </p>
+        <section class="product-detail">
+            <h2 class="visually-hidden">product detailed description</h2>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active product-detail__img-wrapper">
+                        <img src="images/product-detail1.png" class="product-detail__img" alt="product detail1">
+                    </div>
+                    <div class="carousel-item product-detail__img-wrapper">
+                        <img src="images/product-detail1.png" class="product-detail__img" alt="product detail1">
+                    </div>
+                </div>
+                <button class="carousel-control-prev product-detail__img-button" type="button"
+                    data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <i class="fas fa-chevron-left"></i>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next product-detail__img-button" type="button"
+                    data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <i class="fas fa-chevron-right"></i>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="product-description">
+                <h3 class="product-description__collection">women collection</h3>
+                <div class="product-description__pink-line"></div>
+                <h4 class="product-description__title">moschino cheap and chic</h4>
+                <div class="product-description__text">
+                    Compellingly actualize fully researched processes before proactive outsourcing. Progressively
+                    syndicate collaborative architectures before cutting-edge services. Completely visualize
+                    parallel
+                    core competencies rather than exceptional portals.
+                </div>
+                <div class="product-description__price">
+                    $561
+                </div>
+                <div class="product-description__grey-line"></div>
+                <div class="product-description__dropdowns-wrapper">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle product-description__dropdown" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            choose color<i class="fas fa-angle-down product-description__dropdown-icon"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item product-description__dropdown-item" href="#">Black</a></li>
+                            <li><a class="dropdown-item product-description__dropdown-item" href="#">White</a></li>
+                            <li><a class="dropdown-item product-description__dropdown-item" href="#">Grey</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn product-description__dropdown dropdown-toggle" type="button"
+                            id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                            choose size<i class="fas fa-angle-down product-description__dropdown-icon"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                            <li><a class="dropdown-item product-description__dropdown-item" href="#">xs</a></li>
+                            <li><a class="dropdown-item product-description__dropdown-item" href="#">s</a></li>
+                            <li><a class="dropdown-item product-description__dropdown-item" href="#">m</a></li>
+                            <li><a class="dropdown-item product-description__dropdown-item" href="#">l</a></li>
+                            <li><a class="dropdown-item product-description__dropdown-item" href="#">xl</a></li>
+                            <li><a class="dropdown-item product-description__dropdown-item" href="#">xxl</a></li>
+                            <li><a class="dropdown-item product-description__dropdown-item" href="#">xxl</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn product-description__dropdown dropdown-toggle" type="button"
+                            id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                            quantity<i class="fas fa-angle-down product-description__dropdown-icon"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                            <form class="px-4 py-3">
+                                <div class="mb-3">
+                                    <input type="number" class="form-control" id="exampleDropdownFormnQuantity"
+                                        placeholder="1">
                                 </div>
-                                <button type="button" class="cart-list__product-close close-button"><img
-                                        class="cart-list__product-close-img" src="images/close.svg" alt="close"
-                                        width="18" height="18"></button>
-                            </div>
-                        </li>
-                        <li class="cart-list__product">
-                            <img class="cart-list__product-img" src="images/product1.png" alt="product1" width="262"
-                                height="306">
-                            <div class="cart-list__product-content">
-                                <div class="cart-list__product-content-wrapper">
-                                    <h3 class="cart-list__product-title">mango&nbsp;people t&#8209;shirt</h3>
-                                    <p class="cart-list__product-text">Price: <span class="cart_pink-text">$300</span>
-                                    </p>
-                                    <p class="cart-list__product-text">Color: <span
-                                            class="cart-list__product-value">Red</span>
-                                    </p>
-                                    <p class="cart-list__product-text">Size: <span
-                                            class="cart-list__product-value">Xl</span>
-                                    </p>
-                                    <p class="cart-list__product-text cart-list__product-text_quantity">Quantity:
-                                        <span class="cart-list__product-quantity">2</span>
-                                    </p>
-                                </div>
-                                <button type="button" class="cart-list__product-close close-button"><img
-                                        class="cart-list__product-close-img" src="images/close.svg" alt="close"
-                                        width="18" height="18"></button>
-                            </div>
-                        </li>
-                        <div class="cart-list__button-wrapper">
-                            <button type="button" class="cart-list__button">clear shopping cart</button>
-                            <a href="#" class="cart-list__button">continue shopping</a>
-                        </div>
-                    </ul>
-                    <div class="cart-form">
-                        <form action="#" class="cart-form__form">
-                            <h2 class="cart-form__form-title">shipping adress</h2>
-                            <input type="text" class="cart-form__form-input" placeholder="Country">
-                            <input type="text" class="cart-form__form-input" placeholder="State">
-                            <input type="text" class="cart-form__form-input" placeholder="Postcode / Zip">
-                            <button type="submit" class="cart-form__form-button">get a quote</button>
-                        </form>
-                        <div class="cart-form__checkout">
-                            <p class="cart-form__sub-total">sub total<span
-                                    class="cart-form__checkout-amount">$900</span></p>
-                            <p class="cart-form__grand-total">grand total<span
-                                    class="cart_pink-text grand-total__pink cart-form__checkout-amount">$900</span></p>
-                            <hr class="cart-form__checkout-hr">
-                            <button type="button" class="white-pink-button cart-form__checkout-button">proceed to
-                                checkout</button>
+                            </form>
                         </div>
                     </div>
                 </div>
+                <button type="button" class="white-pink-button product-description__add-to-cart-button"><i
+                        class="fas fa-shopping-cart product-description__button-icon"></i><span
+                        class="product-description__button-text">Add to
+                        Cart</span></button>
+            </div>
+        </section>
+        <section>
+            <h2 class="visually-hidden">Product list</h2>
+            <div class="non-bootstrap-container">
+                <ul class="products-list">
+                    <li class="product-card products-list__item products-list__item_first">
+                        <div class="product-card__wrapper">
+                            <div class="product-card__img">
+                                <img src="images/man_in_t-shirt.png" alt="man in t-shirt" width="360" height="420">
+                            </div>
+                            <div class="product-card__add-to-cart">
+                                <button type="button" class="product-card__button">
+                                    <img src="images/addtocart.svg" alt="cart">
+                                    <span class="product-card__button-text">Add to Cart</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-card__content">
+                            <h3 class="product-card__title">ellery x m'o capsule</h3>
+                            <p class="product-card__info">Known for her sculptural takes on traditional tailoring,
+                                Australian arbiter of cool Kym
+                                Ellery
+                                teams up with Moda Operandi.</p>
+                            <p class="product-card__price">$52.00</p>
+                        </div>
+                    </li>
+                    <li class="product-card products-list__item products-list__item_middle">
+                        <div class="product-card__wrapper">
+                            <div class="product-card__img">
+                                <img src="images/man_in_shorts.png" alt="man in shorts" width="360" height="420">
+                            </div>
+                            <div class="product-card__add-to-cart">
+                                <button type="button" class="product-card__button">
+                                    <img src="images/addtocart.svg" alt="cart">
+                                    <span class="product-card__button-text">Add to Cart</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-card__content">
+                            <h3 class="product-card__title">ellery x m'o capsule</h3>
+                            <p class="product-card__info">Known for her sculptural takes on traditional tailoring,
+                                Australian arbiter of cool Kym
+                                Ellery
+                                teams up with Moda Operandi.</p>
+                            <p class="product-card__price">$52.00</p>
+                        </div>
+                    </li>
+                    <li class="product-card products-list__item products-list__item_last">
+                        <div class="product-card__wrapper">
+                            <div class="product-card__img">
+                                <img src="images/lady_in_grey.png" alt="lady in grey" width="360" height="420">
+                            </div>
+                            <div class="product-card__add-to-cart">
+                                <button type="button" class="product-card__button">
+                                    <img src="images/addtocart.svg" alt="cart">
+                                    <span class="product-card__button-text">Add to Cart</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-card__content">
+                            <h3 class="product-card__title">ellery x m'o capsule</h3>
+                            <p class="product-card__info">Known for her sculptural takes on traditional tailoring,
+                                Australian arbiter of cool Kym
+                                Ellery
+                                teams up with Moda Operandi.</p>
+                            <p class="product-card__price">$52.00</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
@@ -223,4 +306,8 @@
             </div>
         </section>
     </footer>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script> -->
+        <script src="js/bootstrap.bundle.js"></script>
 </body>

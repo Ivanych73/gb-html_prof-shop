@@ -17,6 +17,12 @@
     font-style: $style;
 }
 
+@mixin desktop1440 {
+    @media (max-width: $desktop1440) {
+        @content;
+    }
+}
+
 @mixin desktop1280 {
     @media (max-width: $desktop1280) {
         @content;

@@ -1,6 +1,9 @@
 @import './reset';
 @import './variables';
 @import './mixins';
+@import './lato';
+@import './fontawesome/fontawesome';
+@import './fontawesome/solid';
 @import './common';
 @import './blocks/header';
 @import './blocks/brand';
@@ -11,3 +14,4 @@
 @import './blocks/copyright';
 @import './blocks/registration';
 @import './blocks/cart';
+@import './blocks/product';
