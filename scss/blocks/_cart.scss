@@ -14,12 +14,16 @@
     }
 }
 
-.cart-list {
+.cart-list-wrapper {
+    
     width: 57%;
 
     @include tablet960 {
         width: 100%;
     }
+}
+
+.cart-list {
 
     &__product {
         display: flex;

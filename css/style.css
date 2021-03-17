@@ -7480,12 +7480,12 @@ body {
   }
 }
 
-.cart-list {
+.cart-list-wrapper {
   width: 57%;
 }
 
 @media (max-width: 960px) {
-  .cart-list {
+  .cart-list-wrapper {
     width: 100%;
   }
 }
