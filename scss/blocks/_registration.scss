@@ -43,6 +43,8 @@
         border: 1px solid $silver-chalice;
         margin: 21px 0 0 0;
         padding: 13px 0 16px 17px;
+        transition-property: background-color;
+        transition-duration: 600ms;
     }
 
     &__input:hover {
