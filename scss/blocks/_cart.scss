@@ -14,12 +14,16 @@
     }
 }
 
-.cart-list {
+.cart-list-wrapper {
+    
     width: 57%;
 
     @include tablet960 {
         width: 100%;
     }
+}
+
+.cart-list {
 
     &__product {
         display: flex;
@@ -151,6 +155,8 @@
         @include font-settings (300, 14px, 17px);
         box-sizing: border-box;
         font-family: Lato;
+        transition-property: color, background-color, box-shadow;
+        transition-duration: 600ms;
 
         @include tablet750 {
             width: 174px;
@@ -162,6 +168,13 @@
     &__button:hover {
         background-color: $silver-chalice;
         color: $white;
+        transform: scale(1.1);
+        box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+    }
+
+    &__button:active {
+        transform: scale(0.95);
+        box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6) inset;
     }
 }
 
@@ -207,6 +220,12 @@
         @include font-settings (300, 13px, 16px);
         color: $input-grey;
         box-sizing: border-box;
+        transition-property: background-color;
+        transition-delay: 600ms;
+    }
+
+    &__form-input:hover {
+        background-color: $soft-peach;
     }
 
     &__form-button {
@@ -219,11 +238,20 @@
         height: 34px;
         margin: 4px 0 0 0;
         box-sizing: border-box;
+        transition-property: color, background-color, box-shadow;
+        transition-duration: 600ms;
     }
 
     &__form-button:hover {
         background-color: $silver-chalice;
-        color: $white;
+        color: $white;        
+        transform: scale(1.1);
+        box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+    }
+
+    &__form-button:active {
+        transform: scale(0.95);
+        box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6) inset;
     }
 
     &__checkout {

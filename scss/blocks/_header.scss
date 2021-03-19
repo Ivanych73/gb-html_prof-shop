@@ -96,13 +96,28 @@
     }
 
     &__navigation-link {
+        width: fit-content;
         color: $darker-grey;
         text-decoration: none;
         display: block;
         margin: 0 0 11px 22px;
+        transition-property: box-shadow;
+        transition-duration: 600ms;
+    }
+
+    &__navigation-link:hover {
+        transform: scale(1.05);
+        box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+    }
+
+    &__navigation-link:active {
+        transform: scale(0.95);
+        box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+
     }
 }
 
 .display-block {
     display: block;
+    z-index: 2;
 }

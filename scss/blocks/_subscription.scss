@@ -1,6 +1,7 @@
 .subscription {
     min-height: 448px;
     background-image: url(../images/subscribe-background.png);
+    background-color: #F4F4F4;
     background-size: cover;
     display: flex;
 
@@ -86,6 +87,8 @@
         line-height: 17px;
         padding: 0 0 0 22px;
         box-sizing: border-box;
+        transition-property: background-color;
+        transition-duration: 600ms;
 
         @include mobile {
             height: 47px;
