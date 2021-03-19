@@ -92,7 +92,18 @@
         <section>
             <h2 class="visually-hidden">Catalog</h2>
             <div class="non-bootstrap-container">
-                <div class="catalog-filter"></div>
+                <div class="catalog-filter">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Filter
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
+                </div>
                 <ul class="catalog-list">
                     <li class="product-card catalog-list__item">
                         <div class="product-card__wrapper">
@@ -327,5 +338,5 @@
             </div>
         </section>
     </footer>
-    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
