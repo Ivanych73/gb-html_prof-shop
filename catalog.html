@@ -80,7 +80,7 @@
         <script src="js/script.js"></script>
     </header>
     <main>
-        <section class="heading">
+        <section class="heading catalog-heading">
             <div class="non-bootstrap-container">
                 <div class="heading__title-wrapper">
                     <h1 class="heading__title">new arrivals</h1>
@@ -92,18 +92,56 @@
         <section>
             <h2 class="visually-hidden">Catalog</h2>
             <div class="non-bootstrap-container">
-                <div class="catalog-filter">
+                <form class="filter">
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                          Filter
+                        <button class="btn filter__dropdown dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            filter
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
-                      </div>
-                </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn filter__dropdown dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            trending now<i class="fas fa-angle-down product-description__dropdown-icon"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn filter__dropdown dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            size<i class="fas fa-angle-down product-description__dropdown-icon"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn filter__dropdown dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            price<i class="fas fa-angle-down product-description__dropdown-icon"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-price" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <div class="dropdown-input-number dropdown-item">
+                                    <label for="price-from" class="">From: </label>
+                                    <input type="number" id="price-from">
+                                    <label for="price-to" class=""> To: </label> <input type="number" id="price-to">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
                 <ul class="catalog-list">
                     <li class="product-card catalog-list__item">
                         <div class="product-card__wrapper">
@@ -241,6 +279,41 @@
                         </div>
                     </li>
                 </ul>
+                <nav aria-label="catalog pages">
+                    <ul class="pagination catalog-pagination">
+                        <li class="page-item">
+                            <a class="page-link catalog-pagination__page-link catalog-pagination__page-link_direction  animated-link"
+                                href="#" aria-label="Previous">
+                                <i class="fas fa-chevron-left"></i>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link catalog-pagination__page-link animated-link"
+                                href="catalog.html">1</a></li>
+                        <li class="page-item"><a class="page-link catalog-pagination__page-link  animated-link"
+                                href="catalog.html">2</a></li>
+                        <li class="page-item"><a class="page-link catalog-pagination__page-link  animated-link"
+                                href="catalog.html">3</a></li>
+                        <li class="page-item"><a class="page-link catalog-pagination__page-link  animated-link"
+                                href="catalog.html">4</a></li>
+                        <li class="page-item"><a class="page-link catalog-pagination__page-link  animated-link"
+                                href="catalog.html">5</a></li>
+                        <li class="page-item"><a class="page-link catalog-pagination__page-link  animated-link"
+                                href="catalog.html">6</a></li>
+                        <li class="page-item"><a class="page-link catalog-pagination__page-link  animated-link"
+                                href="catalog.html">7</a></li>
+                        <li class="page-item"><a class="page-link catalog-pagination__page-link animated-link"
+                                href="catalog.html">8</a></li>
+                        <li class="page-item"><a class="page-link catalog-pagination__page-link animated-link"
+                                href="catalog.html">9</a></li>
+                        <li class="page-item"><a class="page-link catalog-pagination__page-link animated-link"
+                                href="catalog.html">10</a></li>
+                        <a class="page-link catalog-pagination__page-link catalog-pagination__page-link_direction animated-link"
+                            href="#" aria-label="Next">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </section>
         <section class="advantages">

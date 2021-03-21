@@ -1,11 +1,71 @@
+.catalog-heading {
+    margin: 0 0 50px 0;
+
+    @include desktop1280 {
+        margin: 0 0 25px 0;
+    }
+}
+
+.filter {
+
+    display: flex;
+
+    &__dropdown {
+        width: auto;
+        height: auto;
+        margin: 0 10px 65px 0;
+        color: $darker-grey;
+        background-color: $white;
+        border: none;
+        text-transform: uppercase;
+        @include font-settings (400, 14px, 17px);
+        padding: 0;
+        display: flex;
+        align-items: center;
+
+        @include desktop1280 {
+            margin: 0 10px 40px 0;
+        }
+
+        @include mobile {
+            @include font-settings (400, 12px, 14px);
+        }
+    }
+
+    &__dropdown::after {
+        display: none;
+    }
+
+    &__dropdown:focus {
+        outline: 0;
+        color: $pink;
+    }
+
+    &__dropdown:active {
+        outline: 0;
+        color: $pink;
+    }
+
+    &__dropdown-icon {
+        margin: 0 0 0 9px;
+    }
+
+    &__dropdown-item {
+        text-transform: uppercase;
+        color: $darker-grey;
+    }
+}
+
 .catalog-list {
     display: grid;
     grid-template-columns: repeat(3, 360px);
     justify-content: space-between;
     row-gap: 30px;
+    margin: 0 0 49px;
 
     @include desktop1280 {
         grid-template-columns: repeat(2, 360px);
+        margin: 0 0 40px;
     }
 
     @include tablet750 {
@@ -22,4 +82,38 @@
             display: none;
         }
     }
+}
+
+.catalog-pagination {
+    width: fit-content;
+    margin: 0 auto;
+    border: 1px solid $mercury;
+
+    &__page-link {
+        color: $mercury;
+        @include font-settings (300, 16px, 19px);
+        border: none;
+        transition-property: color, background-color;
+        transition-duration: 600ms;
+
+        &_direction {
+            color: $black;
+        }
+    }
+
+    &__page-link:hover {
+        color: $dark-grey;
+    }
+
+    &__page-link:active {
+        color: $pink;
+    }
+
+    &__page-link:focus {
+        color: $pink;
+    }
+}
+
+.dropdown-input-number:active {
+    background-color: $pink;
 }
