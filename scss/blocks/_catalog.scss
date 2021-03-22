@@ -54,6 +54,23 @@
         text-transform: uppercase;
         color: $darker-grey;
     }
+
+    &__dropdown-item:active {
+        color: $white;
+        background-color: $pink;
+    }
+
+    // &__dropdown-size-checkbox {
+    //     display: none;
+    // }
+
+    &__dropdown-size-label::before {
+        content: url(../images/checkbox.svg);
+    }
+
+    &__dropdown-size-checkbox:checked+ &__dropdown-size-label::before {
+        background-image: url(../images/file_check_mark_9x9.svg);
+    }
 }
 
 .catalog-list {
@@ -114,6 +131,6 @@
     }
 }
 
-.dropdown-input-number:active {
-    background-color: $pink;
-}
+// .dropdown-input-number:active {
+//     background-color: $pink;
+// }
