@@ -13,7 +13,7 @@
     &__dropdown {
         width: auto;
         height: auto;
-        margin: 0 10px 65px 0;
+        margin: 0 28px 65px 0;
         color: $darker-grey;
         background-color: $white;
         border: none;
@@ -29,6 +29,11 @@
 
         @include mobile {
             @include font-settings (400, 12px, 14px);
+        }
+
+        &_complex {
+            color: $black;
+            @include font-settings (600, 14px, 17px);
         }
     }
 
@@ -53,6 +58,7 @@
     &__dropdown-item {
         text-transform: uppercase;
         color: $darker-grey;
+        padding: 0;
     }
 
     &__dropdown-item:active {
@@ -60,17 +66,40 @@
         background-color: $pink;
     }
 
-    // &__dropdown-size-checkbox {
-    //     display: none;
-    // }
+    &__dropdown-item:focus {
+        color: $white;
+        background-color: $pink;
+    }
+
+    &__dropdown-size {
+        padding: 10px;
+        min-width: 80px;
+    }
+
+    &__dropdown-size-checkbox {
+        display: none;
+    }
+
+    &__dropdown-size-label {
+        margin: 0 0 6px;
+    }
 
     &__dropdown-size-label::before {
         content: url(../images/checkbox.svg);
+        margin: 0 10px 0 0;
     }
 
     &__dropdown-size-checkbox:checked+ &__dropdown-size-label::before {
-        background-image: url(../images/file_check_mark_9x9.svg);
+        background-image: url(../images/checkmark.svg);
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: center center;
     }
+}
+
+.filter-complex-text {
+    display: block;
+    margin: 0 11px 0 0;
 }
 
 .catalog-list {
@@ -131,6 +160,7 @@
     }
 }
 
-// .dropdown-input-number:active {
-//     background-color: $pink;
-// }
+.dropdown-menu {
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    padding: 10px;
+}

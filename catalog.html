@@ -94,14 +94,20 @@
             <div class="non-bootstrap-container">
                 <form class="filter">
                     <div class="dropdown">
-                        <button class="btn filter__dropdown dropdown-toggle" type="button" id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            filter
+                        <button class="btn filter__dropdown filter__dropdown_complex dropdown-toggle" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="filter-complex-text"> filter</span>
+                            <svg class="filter-complex-img" width="15" height="10" viewBox="0 0 38 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.08333 25H10.4167C11.5625 25 12.5 24.0625 12.5 22.9167C12.5 21.7708 11.5625 20.8333 10.4167 20.8333H2.08333C0.9375 20.8333 0 21.7708 0 22.9167C0 24.0625 0.9375 25 2.08333 25ZM0 2.08333C0 3.22917 0.9375 4.16667 2.08333 4.16667H35.4167C36.5625 4.16667 37.5 3.22917 37.5 2.08333C37.5 0.9375 36.5625 0 35.4167 0H2.08333C0.9375 0 0 0.9375 0 2.08333ZM2.08333 14.5833H22.9167C24.0625 14.5833 25 13.6458 25 12.5C25 11.3542 24.0625 10.4167 22.9167 10.4167H2.08333C0.9375 10.4167 0 11.3542 0 12.5C0 13.6458 0.9375 14.5833 2.08333 14.5833Z"
+                                    fill="currentColor" />
+                            </svg>
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">category</a></li>
+                            <li><a class="dropdown-item" href="#">brand</a></li>
+                            <li><a class="dropdown-item" href="#">designer</a></li>
                         </ul>
                     </div>
                     <div class="dropdown">
@@ -110,9 +116,9 @@
                             trending now<i class="fas fa-angle-down product-description__dropdown-icon"></i>
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item filter__dropdown-item" href="#">business</a></li>
+                            <li><a class="dropdown-item filter__dropdown-item" href="#">casual</a></li>
+                            <li><a class="dropdown-item filter__dropdown-item" href="#">formal</a></li>
                         </ul>
                     </div>
                     <div class="dropdown">
@@ -120,11 +126,33 @@
                             data-bs-toggle="dropdown" aria-expanded="false">
                             size<i class="fas fa-angle-down filter__dropdown-icon"></i>
                         </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <ul class="dropdown-menu filter__dropdown-size" aria-labelledby="dropdownMenuButton1">
                             <li>
                                 <div class="filter__dropdown-item dropdown-item">
+                                    <input class="filter__dropdown-size-checkbox" type="checkbox" id="size-xs"
+                                        value="extrasmall">
+                                    <label class="filter__dropdown-size-label" for="size-xs">xs</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="filter__dropdown-item dropdown-item">
+                                    <input class="filter__dropdown-size-checkbox" type="checkbox" id="size-s"
+                                        value="small">
                                     <label class="filter__dropdown-size-label" for="size-s">s</label>
-                                    <input class="filter__dropdown-size-checkbox" type="checkbox" id="size-s" value="s">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="filter__dropdown-item dropdown-item">
+                                    <input class="filter__dropdown-size-checkbox" type="checkbox" id="size-m"
+                                        value="medium">
+                                    <label class="filter__dropdown-size-label" for="size-m">m</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="filter__dropdown-item dropdown-item">
+                                    <input class="filter__dropdown-size-checkbox" type="checkbox" id="size-l"
+                                        value="large">
+                                    <label class="filter__dropdown-size-label" for="size-l">l</label>
                                 </div>
                             </li>
                         </ul>
