@@ -45,7 +45,7 @@
     
     &__browse-link {
         width: 211px;
-        height: 47px;
+        min-height: 47px;
         margin: 18px auto 0 auto;
         text-decoration: none;
         @include flex-center-center;
@@ -90,7 +90,7 @@
     &__button {
         border: 1px solid $white;
         width: 138px;
-        height: 43px;
+        min-height: 43px;
         font-size: 14px;
         line-height: 17px;
         color: $white;
@@ -109,6 +109,8 @@
     }
 
     &__content {
+        display: block;
+        text-decoration: none;
         padding: 25px 29px 20px 16px;
     }
 

@@ -6,13 +6,13 @@
     display: flex;
 
     @include tablet {
-        height: 614px;
+        min-height: 614px;
         padding: 64px 0 140px;
         box-sizing: border-box;
     }
 
     @include mobile {
-        height: 550px;
+        min-height: 550px;
         padding: 64px 0 110px;
     }
 
@@ -78,7 +78,7 @@
     }
 
     &__input {
-        height: 49px;
+        min-height: 49px;
         width: 256px;
         border: none;
         border-radius: 20px 0 0 20px;
@@ -91,7 +91,7 @@
         transition-duration: 600ms;
 
         @include mobile {
-            height: 47px;
+            min-height: 47px;
             width: 242px;
         }
     }
@@ -102,7 +102,7 @@
 
     &__button {
         width: 100px;
-        height: 49px;
+        min-height: 49px;
         border-radius: 0 20px 20px 0;
         font-size: 14px;
         line-height: 17px;
@@ -110,7 +110,7 @@
 
         @include mobile {
             width: 96px;
-            height: 47px;
+            min-height: 47px;
         }
     }
 }

@@ -135,7 +135,7 @@
     &__complex-img {
         @include mobile {
             width: 38px;
-            height: 25px;
+            min-height: 25px;
         }
     }
 
