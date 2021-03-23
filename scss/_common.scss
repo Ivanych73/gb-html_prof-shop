@@ -90,7 +90,7 @@ body {
 }
 
 .heading {
-    height: 148px;
+    min-height: 148px;
     display: flex;
     align-items: center;
     background-color: $soft-peach;

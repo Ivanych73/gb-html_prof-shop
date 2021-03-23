@@ -7,11 +7,14 @@
     }
 
     @include mobile {
-        height: 363px;
+        min-height: 363px;
         margin: 0 0 64px;
     }
 
     .brand__img {
+        width: 50%;
+        height: auto;
+        
         @include mobile {
             display: none;
         }
