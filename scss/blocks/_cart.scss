@@ -44,7 +44,7 @@
 
         @include tablet600 {
             width: 144px;
-            height: 188px;
+            min-height: 188px;
         }
     }
 
@@ -60,7 +60,7 @@
     }
 
     &__product-close {
-        height: 18px;
+        min-height: 18px;
         margin: 6px 0 0 0;
 
         @include tablet600 {
@@ -71,7 +71,7 @@
     &__product-close-img {
         @include tablet600 {
             width: 11px;
-            height: 10px;
+            min-height: 10px;
         }
     }
 
@@ -111,14 +111,14 @@
     &__product-quantity {
         @include flex-center-center;
         width: 43px;
-        height: 24px;
+        min-height: 24px;
         color: $dove-grey;
         margin: 0 0 0 24px;
         border: 1px solid $gallery;
 
         @include tablet600 {
             width: 24px;
-            height: 15px;
+            min-height: 15px;
             margin: 0 0 0 15px;
         }
     }
@@ -146,7 +146,7 @@
     &__button {
         border: 1px solid $silver-chalice;
         width: 235px;
-        height: 50px;
+        min-height: 50px;
         text-decoration: none;
         text-transform: uppercase;
         @include flex-center-center;
@@ -160,7 +160,7 @@
 
         @include tablet750 {
             width: 174px;
-            height: 32px;
+            min-height: 32px;
             @include font-settings (400, 12px, 14px);
         }
     }
@@ -213,7 +213,7 @@
 
     &__form-input {
         width: 359px;
-        height: 44px;
+        min-height: 44px;
         border: 1px solid $silver-chalice;
         padding: 13px 0 16px 17px;
         margin: 0 0 21px 0;
@@ -235,7 +235,7 @@
         background-color: $white;
         border: 1px solid $silver-chalice;
         width: 100px;
-        height: 34px;
+        min-height: 34px;
         margin: 4px 0 0 0;
         box-sizing: border-box;
         transition-property: color, background-color, box-shadow;
@@ -300,7 +300,7 @@
         margin: 17px 0 0 0;
         box-sizing: border-box;
         width: 273px;
-        height: 50px;
+        min-height: 50px;
         text-transform: uppercase;
         align-self: center;
     }

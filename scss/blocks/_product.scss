@@ -3,11 +3,11 @@
     &__img-wrapper {
         background-color: $alabaster;
         z-index: -1;
-        height: 48vw;
+        min-height: 48vw;
         position: relative;
 
         @include tablet {
-            height: 624px;
+            min-height: 624px;
         }
     }
 
@@ -47,7 +47,7 @@
 
 .product-description {
     width: 71%;
-    height: 600px;
+    min-height: 600px;
     margin: -64px auto 129px;
     border: 1px solid $gallery;
     background-color: $white;
@@ -155,7 +155,7 @@
         display: flex;
         justify-content: space-between;
         width: 373px;
-        height: 17px;
+        min-height: 17px;
         margin: 0 0 49px;
 
         @include mobile {
@@ -196,7 +196,7 @@
     &__add-to-cart-button {
         padding: 11px 0 0 24px;
         width: 211px;
-        height: 47px;
+        min-height: 47px;
         box-sizing: border-box;
         @include font-settings (400, 16px, 19px);
         display: flex;
